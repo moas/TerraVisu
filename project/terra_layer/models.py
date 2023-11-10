@@ -154,6 +154,9 @@ class Scene(models.Model):
     class Meta:
         ordering = ["order"]
 
+    def __str__(self):
+        return f"{self.category}: {self.name}: {self.id} - {self.slug}"
+
 
 class LayerGroup(models.Model):
     view = models.ForeignKey(
@@ -332,7 +335,10 @@ class Layer(CloneMixin, models.Model):
         return obj
 
     def __str__(self):
-        return f"Layer({self.id}) - {self.name}"
+        string = f"{self.name} ({self.id} - {self.layer_identifier}"
+        if self.group:
+            string = f"{self.group.label}: {string}"
+        return string
 
     @transaction.atomic()
     def replace_source(self, new_source, fields_matches=None, dry_run=False):
