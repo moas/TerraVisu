@@ -154,9 +154,11 @@ Le zoom sur l'étendue spatiale
 
 Cet outil permet de zoomer sur l'étendue spatiale d'une couche activée. Le zoom est particulièrement utile lorsque l'on souhaite voir l'emprise géographique des éléments filtrés d'une couche.
 
-**Exemple d'un zoom pour le TerraVisu de SeineYonne**
+**Exemple d'un zoom**
 
-.. image :: ../_static/images/visu/visu_zoomemprise.png
+.. image:: ../_static/images/visu/zoom_extent.gif
+   :alt: Zoom sur l'emprise spaiale d'une couche
+   :align: center
 
 La table attributaire et le widget sont automatiquement mis à jour en fonction du zoom.
 
@@ -225,7 +227,7 @@ La recherche sur la carte
 La recherche sur la carte (via l'outil loupe) permet d'effectuer à la fois :
 
 * une recherche de lieu ou d'adresse par à un appel à la base d'adresses Nominatim implémenté,
-* une recherche dans les champs textuels d'une ou plusieurs couches activées (exemple : une parcelle par le nom du proprétaire).
+* une recherche dans les champs textuels d'une ou plusieurs couches activées (exemple : une parcelle par le nom du propriétaire).
 
 Le fait de sélectionner un résultat dans les attributs de la ou les couches activées permet de zoomer sur ce résultat, de sélectionner l'objet en surbrillance et d'ouvrir la mini-fiche (si elle existe).
 
